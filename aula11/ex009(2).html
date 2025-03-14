@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: rgb(208, 232, 255);
+        }
+
+         
+        #principal {      
+            padding: 20px;    
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <h1>Qual é a sua Nacionalidade?</h1>
+        País: <input type="text" name="txt1" id="txt1">
+        <input type="button" value="Confirmar" onclick="calcular()">
+        <div id="res">
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.getElementById("txt1")
+            var res = window.document.getElementById("res")
+            var resultado = txtv.value
+            
+            if (resultado == 'Brasil') {
+                res.innerHTML = '<p>Você é <strong>Brasileiro</strong>!</p>'
+            }
+             else {
+                res.innerHTML = '<p>Você é <strong>Estrangeiro</strong>!</p>'
+          }
+        }
+    </script>
+    
+</body>
+</html>
