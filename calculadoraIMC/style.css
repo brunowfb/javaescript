@@ -16,20 +16,39 @@ body {
 }
 
 
-.container {
+.box {
     display: flex;
+    padding: 40px;
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+   
 }
 #tela {
     display: flex;
     font-size: 1.3em;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 #botao {
     width: 100%;
+    cursor: pointer;
 }
+
+.altura, .peso, .btn_btn-primary {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input, button {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    
+}
+
