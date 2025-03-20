@@ -16,6 +16,7 @@ body {
 }
 
 
+
 .box {
     display: flex;
     padding: 40px;
@@ -23,7 +24,7 @@ body {
     justify-content: center;
     flex-flow: column wrap;
     color: rgb(255, 255, 255);
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(56, 56, 56);
     border-radius: 10px;
    
 }
